@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+<body>
+      <nav class="navbar">
+        <div class="logo"><h1>movie Hub</h1></div>
+<div class="search-container">
+  <input class="search" type="search" id="searchInput" placeholder="search...">
+  <i class="fas fa-search search-icon" style="cursor: pointer;" onclick="searchMovies()"></i>
+</div>
+
+        <ul class="menu">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href=""><i class="fa-solid fa-download"></i></i></a></li>
+            <li><a href="favourite.html" ><i class="fas fa-heart"></i></a></li>
+            <button id="darkModeToggle">
+            <span id="moonIcon">🌙</span>
+            <span id="sunIcon" style="display:none;">☀️</span>
+            </button>
+            
+        </ul>
+        <!-- <div class="menu-btn">
+            <i class="fa fa-bars"></i> 
+        </div> -->
+
+     </nav>
+    
+     <h1 class="pheading">Favourite</h1>
+     <div id="favouriteContainer"> 
+
+     </div>
+     <footer>
+        <p>Copyrights @<a href = ""> Movie Hub</a></p>
+     </footer>
+     
+     <script>
+     
+         
+     </script>
+     <script src="movie.js"></script>
+</body>
+</html>

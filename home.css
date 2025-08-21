@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+}
+/* header */
+.menu-btn{
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: #f3f4f6;    
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+}
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 4px solid #fd5661;
+    font-family: "Bebas Neue", sans-serif;
+font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.navbar .menu li {
+    list-style: none; 
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold ;
+     font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal
+}
+.navbar .menu li .active:hover{
+    border-bottom: 4px solid #fd5661;
+}
+.navbar .menu li a i{
+    color: #fd5661;
+}
+.navbar .menu li a:hover{
+    border-bottom: 4px solid #fd5661;
+}
+.content{
+    background-image: url("images/save.jpeg");
+    background-size:cover;
+    background-repeat:round;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 135vh;
+}
+.content h1 {
+    font-size: 40px;
+}
+content p{
+    font-size:20px ;
+    margin-top: 20px ;
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px ;
+    border:none;
+    background: #f63e4e;
+    color: white;
+    font-size:20px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.pheading{
+    text-align: center;
+    margin: 50px 0;
+    color: #424144;
+
+}
+/* ////////////////////////////////////////// */
+input[type="search"] {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="search"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+button [type="search"]{
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="search"]:hover {
+  background-color: #0056b3;
+}
+/* /////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////// */
+#favouriteContainer{
+    padding: 85px;
+}
+.sec{
+    padding: 85px;
+}
+.products .card,
+#favouriteContainer .card{
+    width: 310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    /* padding: 5px; */
+    margin: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.products .card img,
+#favouriteContainer .card img{
+    height: 250px;
+    width: 100%;
+}
+.products .card .desc,
+#favouriteContainer .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.products .card .title,
+#favouriteContainer .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+.products .card .box,
+#favouriteContainer .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: x-large;
+}
+.products .card .box .price,
+#favouriteContainer .card .box .price{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.products .card .box .btn,
+#favouriteContainer .card .box .btn{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+.products .card .box .btn:hover,
+#favouriteContainer .card .box .btn:hover{
+     cursor: pointer;
+     background-color: #f63e4e;
+     color: white;}
+
+/* Download container styles */
+#downloadContainer{
+    padding: 85px;
+}
+
+#downloadContainer .card{
+    width: 310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: 0.7s ease;
+}
+
+#downloadContainer .card:hover{
+    transform: scale(1.1);
+}
+
+#downloadContainer .card img{
+    height: 250px;
+    width: 100%;
+}
+
+#downloadContainer .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+#downloadContainer .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+#downloadContainer .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: x-large;
+}
+
+#downloadContainer .card .box .btn{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+
+#downloadContainer .card .box .btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+
+/* Download button states */
+.download-btn.downloaded {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.download-btn.downloaded:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* No downloads message */
+.no-downloads {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 50px 0;
+}
+
+/* Notifications */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+}
+
+.notification.success {
+    background-color: #28a745;
+}
+
+.notification.info {
+    background-color: #17a2b8;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#navbarHeart{
+    cursor: pointer;
+}
+/* //////////////////////////////////// */
+footer{
+    background-color: #f3f4f6;
+    height: 10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+footer p a{
+    text-decoration: none;
+    color: #f63e4e;
+    font-weight: bold;
+} 
+/* ///////////////////dark mode///////////////////////////// */
+body.dark-mode  {
+  background-color: #3B3B1A;
+  /* color: #E7EFC7; */
+}
+body.dark-mode .logo h1{
+  background-color: #8A784E;
+  color: #E7EFC7;
+  border-bottom: 4px solid #E7EFC7;
+}
+body.dark-mode .navbar .menu li a .active{
+    color: #E7EFC7;
+    /* background-color: #ba2424; */
+}
+footer a:hover {
+  text-decoration: underline;
+}
+body.dark-mode nav,
+body.dark-mode footer {
+  background: #8A784E;
+  color: #3B3B1A;
+}
+body.dark-mode .menu li a i{
+    color: #E7EFC7;
+
+}
+body.dark-mode nav a,
+body.dark-mode footer a {
+  color: #ffb74d;
+}
+body.dark-mode .navbar .menu li a .active:hover{
+    border-bottom: 4px solid #E7EFC7;
+}
+body.dark-mode .navbar .menu li a:hover{
+    border-bottom: 4px solid #E7EFC7;
+}
+body.dark-mode .navbar .search-container .search{
+     background-color: #E7EFC7;
+     color: #3B3B1A;
+}
+/* ////////////////////////// */
+body.dark-mode.sec .products .dev{
+    background-color: #E7EFC7;
+     color: #3B3B1A;
+}
+body.dark-mode .content{
+    background-image: url("images/save-.png");
+    color: #E7EFC7;
+}
+body.dark-mode .content button{
+    background-color: #E7EFC7;
+    color: #3B3B1A;
+}
+body.dark-mode .pheading{
+    color: #E7EFC7;
+}
+
+/* Dark mode for download container */
+body.dark-mode #downloadContainer .card {
+    background-color: #E7EFC7;
+    color: #3B3B1A;
+}
+
+body.dark-mode #downloadContainer .card .title {
+    color: #3B3B1A;
+}
+
+body.dark-mode #downloadContainer .card .desc {
+    color: #3B3B1A;
+}
+
+body.dark-mode .no-downloads {
+    color: #E7EFC7;
+}
+
+/* Dark mode for notifications */
+body.dark-mode .notification {
+    background-color: #8A784E;
+    color: #E7EFC7;
+}
